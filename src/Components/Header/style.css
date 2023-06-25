@@ -1,0 +1,88 @@
+header{
+    background-color: #2AED19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header .title{
+    font-size: 54px;
+    color: white;
+}
+
+header .week-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .week-wrapper .sliderBtn{
+    font-size: 32px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+header .week-wrapper .prevDay{
+    position: absolute;
+    left: 10px;
+}
+
+header .week-wrapper .nextDay{
+    position: absolute;
+    right: 10px;
+}
+
+header .week-wrapper .days-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+header .week-wrapper .days-wrapper button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;    
+
+    transition: 0.3s;
+}
+header .week-wrapper .days-wrapper button:hover{
+    color: white;
+    background-color: #232323;    
+    border-radius: 50%;
+}
+header .week-wrapper .days-wrapper button h2{
+    font-weight: 600;
+    font-size: 35px;
+}
+header .week-wrapper .days-wrapper button span{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    header .title{
+        font-size: 8vw;
+    }
+    header .week-wrapper .sliderBtn{
+        font-size: 8vw;
+    }
+    header .week-wrapper .days-wrapper{
+        justify-content: space-evenly;
+        width: 85%;
+    }
+    header .week-wrapper .days-wrapper button{
+        width: 11vw;
+        height: 11vw;    
+    }
+    header .week-wrapper .days-wrapper button h2{
+        font-size: 5vw;
+    }
+    header .week-wrapper .days-wrapper button span{
+        font-size: 3vw;
+    }
+}
