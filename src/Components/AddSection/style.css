@@ -56,13 +56,13 @@
 
 .AddSection-wrapper .AddSection-row .AddSection-list{
     padding: 10px 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
 .AddSection-wrapper .AddSection-row .AddSection-list .list-row{
     padding: 5px 20px;
-    display: flex;
+    /* display: none; */
     flex-direction: column;
     position: relative;
 }
@@ -90,6 +90,9 @@
     font-weight: 600;
 }
 
+.AddSection-wrapper .AddSection-row  .toggleList{
+    display: flex;
+}
 
 @media screen and (max-width: 650px) {
     .AddSection-wrapper{
