@@ -5,6 +5,7 @@ header{
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 header .title{
@@ -57,11 +58,13 @@ header .week-wrapper .days-wrapper button:hover{
     border-radius: 50%;
 }
 header .week-wrapper .days-wrapper button h2{
-    font-weight: 600;
+    font-weight: 900;
     font-size: 35px;
 }
 header .week-wrapper .days-wrapper button span{
     font-size: 20px;
+    position: relative;
+    top: -5px;
 }
 
 @media screen and (max-width: 480px) {

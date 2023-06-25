@@ -1,0 +1,75 @@
+.AddSection-wrapper{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1vw;
+
+    width: 55%;
+    margin: 2.5%;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.AddSection-wrapper .AddSection-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.AddSection-wrapper .AddSection-row .row-title{
+    font-size: 28px;
+}
+.AddSection-wrapper .AddSection-row .addMoreBtn{
+    background-color: #2AED19;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+.AddSection-wrapper .AddSection-row .showMoreBtn{
+    position: absolute;
+    right: 60px;
+    font-size: 25px;
+
+    border: none;
+    background-color: transparent;
+    color: #2AED19;
+    cursor: pointer;
+}
+.AddSection-wrapper .AddSection-row .row-kcal{
+    position: absolute;
+    right: 95px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .AddSection-wrapper{
+        width: 95%;
+        box-sizing: border-box;
+    }
+    .AddSection-wrapper .AddSection-row .row-title{
+        font-size: 6vw;
+    }
+    .AddSection-wrapper .AddSection-row .addMoreBtn{
+        font-size: 6vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    .AddSection-wrapper .AddSection-row .showMoreBtn{
+        font-size: 6vw;
+        right: 12vw;
+    }
+    .AddSection-wrapper .AddSection-row .row-kcal{
+        font-size: 6vw;
+        right: 22vw;
+    }
+}

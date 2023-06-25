@@ -1,0 +1,136 @@
+.proteinValue{
+    color: #00A3FF;
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+}
+.fatValue{
+    color: #EDE419;
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+}
+.carbohydratesValue{
+    color: #CD05FF;
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+}
+
+.main-wrapper{
+    margin: 2.5%;
+    width: 95%;
+    position: relative;
+    padding: 35px;
+    box-sizing: border-box;
+    
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1vw;
+
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.main-wrapper .mainInfo-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.main-wrapper .mainInfo-wrapper .kcal-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.main-wrapper .mainInfo-wrapper .mainInfoHeader{
+    font-size: 25px;
+    position: relative;
+    width: 250px;
+    color: #B1B1B1;
+}
+.main-wrapper .mainInfo-wrapper .mainInfoValue{
+    font-weight: 900;
+    color: #2AED19;
+    position: absolute;
+    right: 0;
+}
+
+.main-wrapper .mainInfo-wrapper .macros-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.main-wrapper .mainInfo-wrapper .timeOfDay-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    position: absolute;
+    right: 35px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1000px) {
+    .main-wrapper{
+        padding-bottom: 60px;
+    }
+    .main-wrapper .mainInfo-wrapper{
+        width: 50%;
+        margin-left: auto;
+    }
+    .main-wrapper .mainInfo-wrapper .timeOfDay-wrapper {
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 3vw;
+        top:unset;
+        bottom:0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+    }
+    .main-wrapper .mainInfo-wrapper .timeOfDay-wrapper .mainInfoHeader{
+        width: max-content;
+        text-align: center;
+    }
+    .main-wrapper .mainInfo-wrapper .timeOfDay-wrapper .mainInfoValue{
+        position: unset;
+    }
+}
+@media screen and (max-width: 650px) {
+    .main-wrapper{
+        flex-direction: column;
+        gap: 8vw;
+    }
+    .main-wrapper .circleStats-wrapper{
+        width: 80%;
+    }
+    .main-wrapper .mainInfo-wrapper{
+        margin-left: unset;
+        display: flex;
+        width: 100%;
+        gap: 8vw;
+    }
+    .main-wrapper .mainInfo-wrapper .mainInfoHeader{
+        width: 80%;
+        font-size: 6vw;
+    }
+    .main-wrapper .mainInfo-wrapper .kcal-wrapper{
+        align-items: center;
+    }
+    .main-wrapper .mainInfo-wrapper .macros-wrapper{
+        align-items: center;
+    }
+    .main-wrapper .mainInfo-wrapper .timeOfDay-wrapper{
+        position: relative;
+        left:unset;
+        top:unset;
+        right:unset;
+        bottom:unset;
+        transform: unset;
+
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
