@@ -1,9 +1,77 @@
-.ItemSearch-wrapper{
+.retBtn{
     position: absolute;
+    top:15px;
+    left:15px;
+    cursor: pointer;
+    background-color: #2AED19;
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.ItemSearch-wrapper{
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
     height: 100%;
+    background-color: #EDEDED;
 
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ItemSearch-wrapper .Search-pannel{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    width: 55%;
+    margin: 2.5% 22.5% 1%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ItemSearch-wrapper .Search-pannel .SearchInput{
+    width: 75%;
+    height: 35px;
+    text-indent: 15px;
+    border-radius: 15px 0 0 15px;
+    border: 2px solid #e3e3e3;
+    outline: none;
+    background-color: transparent;
+}
+.ItemSearch-wrapper .Search-pannel .SearchBtn{
+    height: 40px;
+    width: 120px;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid #2AED19;
+    background-color: #2AED19;
+    color: white;
+    font-weight: 600;
+    border-left: none;
+    cursor: pointer;
+}
+
+.ItemSearch-wrapper .Search-list{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    width: 55%;
+    margin-left: 22.5%;
+    padding: 15px 30px;
+    box-sizing: border-box;
 }
