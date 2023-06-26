@@ -100,7 +100,7 @@ function AddSection() {
                         <button className="showMoreBtn" onClick={() => handleClick(3)}><FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon></button>
                         <button className="addMoreBtn"><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
                     </div>
-                    <div className={ activeBoxes[3] ? "AddSection-list toggleList" : "AddSection-list" }>
+                    <div className={ activeBoxes[3] ? "AddSection-list" : "AddSection-list toggleList" }>
                         <div className="list-row">
                             <span className="itemName">Mięso z piersi z kurczaka</span>
                             <div className="itemMacros">
