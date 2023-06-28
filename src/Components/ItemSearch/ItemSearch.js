@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function ItemSearch(){
+    const [toggle, setToggle] = useState(false)
+
+    const toggleMe = (params) => {
+        setToggle(!toggle)
+    }
+
     return(
-        <div className="ItemSearch-wrapper">
-            <button className="retBtn">
+        <div className={`ItemSearch-wrapper ${toggle ? "toggleMe" : ""}`}>
+            <button onClick={toggleMe} className="retBtn">
                 <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
             </button>
 
